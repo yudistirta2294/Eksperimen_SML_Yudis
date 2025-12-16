@@ -26,7 +26,9 @@ def preprocess_data(input_path, output_path):
         'course',
         'internet_access',
         'study_method',
-        'exam_difficulty'
+        'exam_difficulty',
+        'sleep_quality',
+        'facility_rating'
     ]
     categorical_cols = [c for c in categorical_cols if c in df_prep.columns]
 
@@ -60,3 +62,4 @@ if __name__ == "__main__":
     )
 
     preprocess_data(input_path, output_path)
+
